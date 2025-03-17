@@ -1,28 +1,26 @@
-# 🌲 Cypress, do Zero à Nuvem ☁️
+# cy-data-test
 
-👋 Seja bem-vindo(a)!
+This is a sample project I developed during a course to demonstrate the creation and use of a custom command in Cypress called `cy.dataTest`.
 
-É muito bom tê-lo(a) aqui. Tenho certeza que você vai amar esse curso. ❤️
+## Pre-requirements
 
-## O que você vai aprender?
+It is required to have Node.js and npm installed to run this project.
 
-- Como configurar um projeto Cypress do zero
-- Como visitar páginas locais e remotas
-- Como lidar com os elementos mais comuns encontrados em aplicações web
-- Como testar upload de arquivos
-- Como realizar as mais diversas verificações de resultados esperados
-- Como criar comandos customizados
-- Como lidar com links que abrem em outra aba do navegador
-- Como rodar testes simulando as dimensões de um dispositivo móvel
-- Como resolver os mesmos problemas de diferentes formas, conhecendo a [API do Cypress](https://docs.cypress.io/api/table-of-contents)
-- Como criar uma documentação mínima para seu projeto de testes automatizados
-- Como executar os testes em um _workflow_ de integração contínua sempre que mudanças ocorrerem no código da aplicação (ou dos testes)
-- Como integrar seu _workflow_ de integração contínua com o Cypress Cloud (o serviço de gestão de testes do Cypress na nuvem)
+> I used versions `v22.12.0` and `10.9.0` of Node.js and npm, respectively. I suggest you use the same or later versions.
 
-## Vamos começar?
+## Installation
 
-Vá para a seção [estrutura do curso](./lessons/_course-structure_.md).
+Run `npm install` (or `npm i` for the short version) to install the dev dependencies.
 
+## Tests
+
+> **Note:** Before running the tests, make a copy of the `cypress.env.example.json` file as `cypress.env.json`, which in the real world, you would update with valid credentials.
+>
+> The `cypress.env.json` file is included on [`.gitignore`](./.gitignore) and you're safe that confidential info won't be versioned.
+
+Run `npm test` (or `npm t` for the short version) to run the test in headless mode.
+
+Or, run `npm run cy:open` to open Cypress in interactive mode.
 ___
 
-Este é um curso da **Escola Talking About Testing**.
+This project was developed by me, Savio Holanda, inspired by the course taught by [Walmyr]. (https://walmyr.dev).
